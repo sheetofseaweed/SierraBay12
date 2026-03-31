@@ -309,6 +309,9 @@
 			msg += "[SPAN_CLASS("deptradio", "Criminal status:")] <a href='byond://?src=\ref[src];criminal=1'>\[[criminal]\]</a>\n"
 			msg += "[SPAN_CLASS("deptradio", "Security records:")] <a href='byond://?src=\ref[src];secrecord=`'>\[View\]</a>\n"
 
+	if(is_nude() && (potenzia > -1) && gender == MALE && genitals)//Interactions
+		msg += "<B>Penis size: [potenzia]cm.</B>\n"
+
 	if(hasHUD(user, HUD_MEDICAL))
 		var/perpname = "wot"
 		var/medical = "None"

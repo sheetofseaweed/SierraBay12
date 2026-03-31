@@ -7,9 +7,6 @@
 	if(src == usr)
 		interact(M)
 
-/mob/proc/make_interaction()
-	return
-
 //Distant interactions
 /mob/living/carbon/human/verb/interact(mob/M as mob)
 	set name = "Interact"
@@ -74,7 +71,3 @@
 	var/datum/browser/popup = new(usr, "interactions", "Interactions", 340, 480)
 	popup.set_content(dat)
 	popup.open()
-
-
-/mob/living/carbon/human
-	var/mob/living/carbon/human/partner
